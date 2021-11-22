@@ -1,9 +1,9 @@
 # What-To-Watch Movie Application 🎥🍿
 
-## Purpose
+## Purpose 
 Create a team collaborative web application.
 
-## User Story
+## User Story 📃
 AS A movie enthusiast
 I WANT to be able to search for my favorite movie by genre
 SO THAT I can watch what I like and rate the movies to be provided with movie suggestions
@@ -21,7 +21,7 @@ THEN I am presented with ? <br/>
 WHEN I click on ? <br/>
 THEN I am presented with ? <br/>
 
-## Project Requirements
+## Project Requirements 
 - [X] Use a CSS Framework other than Bootstrap.
 - [ ] Be deployed to Github Pages
 - [ ] Be interactive (accept and respond to user input)
@@ -35,7 +35,7 @@ THEN I am presented with ? <br/>
 - [ ] Have a quality readme file
 - [ ] Add the project to your portfolio
 
-## Built With
+## Built With ⚙
 * HTML5
 * CSS3
 * BULMA
@@ -50,4 +50,4 @@ https://Dapr1nc3.github.io/what-to-watch/
 ![Alt What to Watch Screenshot](https://github.com/Dapr1nc3/what-to-watch/blob/main/assets/images/screenshot.PNG?raw=true "What to Watch Screenshot")
 
 ## Contribution
-Made by \<a> Team\
+Made by \<a> Team
