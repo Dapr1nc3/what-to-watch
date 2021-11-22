@@ -1,0 +1,35 @@
+/* Variable Styles */
+:root {
+    --toggle-dark: #0b090a;
+    --toggle-white: #ffffff;
+    --lightblue:#0466c8; /* Action */
+    --darkblue: #002855; /* Action */
+    --orange: #fca311; /* Comedy */
+    --blue: #14213d; /* Comedy */
+    --red: #ba181b; /* Horror */
+    --darkblack: #161a1d; /* Horror */
+    --lightpink: #ffa6c1; /* Romance */
+    --darkpink: #cd4257; /* Romance */
+  }
+
+
+
+/* Body Styles */
+body {
+        
+    background-color: var(--toggle-white);         
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--lightblue);
+    color: var(--toggle-white);
+}
+
+.hero-image {
+    background-image: url("./assets/images/movie.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+    
+}
