@@ -3,7 +3,7 @@
 ## Purpose 
 Create a team collaborative web application.
 
-## User Story 📃
+📃 ## User Story 
 AS a movie enthusiast<br/> 
 I WANT to find movies in a more convenient way<br/> 
 SO THAT I can save time to find good movies to watch
@@ -13,7 +13,7 @@ GIVEN a Movie Website<br/>
 WHEN I search for a movie <br/>
 THEN I am presented with 4 genre of movies <br/>
 WHEN I view a genre of movies <br/>
-THEN I am presented with the movie title, description, link to Trailer <br/>
+THEN I am presented with featured movie titles with links to trailers and Movie Cards by Genre<br/>
 WHEN I view a Movie <br/>
 THEN I am presented with a Movie Trailer <br />
 WHEN I view ? <br/>
@@ -35,7 +35,7 @@ THEN I am presented with ? <br/>
 - [ ] Have a quality readme file
 - [ ] Add the project to your portfolio
 
-## Built With ⚙
+⚙ ## Built With 
 * HTML5
 * CSS3
 * BULMA
