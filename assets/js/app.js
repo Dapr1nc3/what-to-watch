@@ -4,6 +4,8 @@ var getMovies = function() {
     // Still working on having the data show in console.log
     // Documentation URL: https://developers.themoviedb.org/3/getting-started/search-and-query-for-details
     // API image documention: https://developers.themoviedb.org/3/movies/get-movie-images
+    // Sample API Movie Image Request: https://api.themoviedb.org/3/movie/550/images?/7PzJdsLGlR7oW4J0J5Xcd0pHGRg.png?api_key=f7d85a51bfa2246df462b8756b8f2df8&language=en-US
+    // Sampe API Fight Club Movie Request: https://api.themoviedb.org/3/search/movie?550?api_key=f7d85a51bfa2246df462b8756b8f2df8&query=Jack+Reacher
     var apiTmdbUrl = "https://api.themoviedb.org/3/search/movie?api_key=f7d85a51bfa2246df462b8756b8f2df8&query=Jack+Reacher";
 
     // Make a Request to the TMDb API Link
