@@ -4,9 +4,9 @@
 Create a team collaborative web application.
 
 ## User Story 📃
-AS A movie enthusiast
-I WANT to be able to search for my favorite movie by genre
-SO THAT I can watch what I like and rate the movies to be provided with movie suggestions
+AS A movie enthusiast<br/>
+I WANT to be able to search for my favorite movie by genre<br/>
+SO THAT I can watch what I like and rate the movies to be provided with movie suggestions<br/>
 
 ## Acceptance Criteria
 GIVEN a <br/>
