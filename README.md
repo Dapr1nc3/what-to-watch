@@ -4,18 +4,18 @@
 Create a team collaborative web application.
 
 ## User Story 📃
-AS A movie enthusiast<br/>
-I WANT to be able to search for my favorite movie by genre<br/>
-SO THAT I can watch what I like and rate the movies to be provided with movie suggestions<br/>
+AS a movie enthusiast<br/> 
+I WANT to find movies in a more convenient way<br/> 
+SO THAT I can save time to find good movies to watch
 
 ## Acceptance Criteria
-GIVEN a <br/>
+GIVEN a Movie Website<br/>
 WHEN I search for a movie <br/>
 THEN I am presented with 4 genre of movies <br/>
 WHEN I view a genre of movies <br/>
-THEN I am presented with the movie title, description, star rating, etc. <br/>
-WHEN I view the ? <br/>
-THEN I am presented with ? <br />
+THEN I am presented with the movie title, description, link to Trailer <br/>
+WHEN I view a Movie <br/>
+THEN I am presented with a Movie Trailer <br />
 WHEN I view ? <br/>
 THEN I am presented with ? <br/>
 WHEN I click on ? <br/>
