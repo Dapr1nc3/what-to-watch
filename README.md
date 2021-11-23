@@ -3,7 +3,7 @@
 ## Purpose 
 Create a team collaborative web application.
 
-📃 ## User Story 
+## User Story 📃 
 AS a movie enthusiast<br/> 
 I WANT to find movies in a more convenient way<br/> 
 SO THAT I can save time to find good movies to watch
@@ -35,7 +35,7 @@ THEN I am presented with ? <br/>
 - [ ] Have a quality readme file
 - [ ] Add the project to your portfolio
 
-⚙ ## Built With 
+## Built With ⚙
 * HTML5
 * CSS3
 * BULMA
