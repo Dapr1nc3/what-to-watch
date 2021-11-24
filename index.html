@@ -1,139 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
+<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Taskmaster Pro</title> 
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What to Watch</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
 
-<body>
+  <body>
 
-  <div class="row min-vh-100 no-gutters">
-    <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
-      <h1 class="text-center">Taskmaster Pro Edition</h1>
-      <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
-        Task</button>
-      <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Tasks</button>
-      <p class="mt-auto d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa
-        excepturi aut non
-        laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
-      </p>
-    </header>
-  <main class="col-12 col-lg-9 d-flex flex-column">
-    <div class="m-5 row justify-content-around">
-      <!-- todo start -->
-      <div class="col-12 col-md-6 col-xl-3 mb-3">
-        <div class="card">
-          <h4 class="card-header bg-dark text-light">
-            To Do
-          </h4>
-          <ul id="list-toDo" class="list-group list-group-flush"> 
-            <li class="list-group-item">
-              <span class="badge badge-primary badge-pill">05/28/2021</span>
-              <p class="m-1">Sample task to do</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- todo end -->
-      <!-- in progress start -->
-      <div class="col-12 col-md-6 col-xl-3 mb-3">
-        <div class="card">
-          <h4 class="card-header bg-dark text-light">
-            In Progress
-          </h4>
-             <ul id="list-inProgress" class="list-group list-group-flush">
-               <li class="list-group-item">
-                 <span class="badge badge-primary badge-pill">05/28/2021</span>
-                 <p class="m-1">Sample task in progress</p>
-              </li>
-            </ul>
-        </div>
-     </div>
-      <!-- in progress end -->
-      <!-- in review start -->
-      <div class="col-12 col-md-6 col-xl-3 mb-3">
-        <div class="card">
-          <h4 class="card-header bg-dark text-light">
-            In Review
-          </h4>
-             <ul id="list-inReview" class="list-group list-group-flush">
-               <li class="list-group-item">
-                  <span class="badge badge-primary badge-pill">05/28/2020</span>
-                  <p class="m-1">Sample task in review</p>
-              </li>
-             </ul>
-         </div>
-       </div>
-      <!-- in review end -->
-      <!-- done start -->
-      <div class="col-12 col-md-6 col-xl-3 mb-3">
-        <div class="card">
-          <h4 class="card-header bg-dark text-light">
-            Done
-          </h4>
-            <ul id="list-Done" class="list-group list-group-flush">
-              <li class="list-group-item">
-                <span class="badge badge-primary badge-pill">05/28/2020</span>
-                <p class="m-1">Sample task that's Done</p>
-              </li>
-            </ul>
-          </div>
-       </div>
-      <!-- done end -->
-    </div>
-      <div id="trash" class="mt-auto">
-        <div class="w-100 bg-danger p-3 text-center text-light display-4">
-          Drop Here to Remove.
-        </div>
-      </div>
-  </main>
+  <!-- Section Start -->
+  <section class="section">
+
+    <!-- Container Start -->
+    <div class="container">
+
+        <!-- Header Start -->
+        <header class="notification is-primary">
+            <h1 class="title">
+                What to Watch Movie Application
+                <p class="subtitle">
+                    Powered by the YouTube API and UMDb API
+                </p>
+            </h1>
+            
+        </header>
+        <!-- Header End -->
+
+        <!-- Navigation Start -->
+        <nav class="navbar">
+            <div class="container">
+              <div id="navMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    
+                  <a class="navbar-item">
+                    <i class="fas fa-home"></i>
+              </span>&nbsp; Home
+                  </a>
+                  <a class="navbar-item">
+                    <i class="fas fa-user-ninja"></i>
+              </span>&nbsp; Action
+                  </a>
+                  <a class="navbar-item">
+                    <i class="far fa-grin-beam"></i>
+                </span>&nbsp; Comedy
+                  </a>
+                  <a class="navbar-item">
+                    <i class="fas fa-skull-crossbones"></i>
+                </span>&nbsp; Horror
+                  </a>
+                  <a class="navbar-item">
+                    <i class="fas fa-kiss-wink-heart"></i>
+                </span>&nbsp; Romance
+                  </a>
+                </div>
+          
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <a class="button is-link">Light Mode</a>
+                      <a class="button is-dark">Dark Mode</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Navigation End -->
+          
+
       
-    
-  </div>
+        <!-- Hero Start -->
+        <section class="hero is-danger">
+                <p class="title">
+                Featured Title
+                </p>
+                <p class="subtitle">
+                Hero subtitle
+                </p>
+                <figure class="image is-3by1">
+                    <img src="">
+                </figure>
+                
+            </div>
+        </section>
+        <!-- Hero End -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="task-form-modal" tabindex="-1" role="dialog" aria-labelledby="task-form-modal"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="task-form-modal">Add New Task</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="modalTaskDescription">Task description</label>
-              <textarea id="modalTaskDescription" rows="3" class="form-control"></textarea>
+
+        <div class="columns">
+            <div class="column">
+                <div class="card" id="is-hover">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img class="img_video1" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <!-- <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                          </figure> -->
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4" id="video-title1"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                        </div>
+                      </div>
+                  
+                      <div class="content" id="video-des1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <div class="form-group">
-              <label for="modalDueDate">Due date</label>
-              <input type="text" class="form-control" id="modalDueDate" placeholder="mm/dd/yyyy" autocomplete="off" />
+            <div class="column">
+                <div class="card"  id="is-hover">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img class="img_video2" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <!-- <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                          </figure> -->
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4" id="video-title2"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                        </div>
+                      </div>
+                  
+                      <div class="content" id="video-des2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save Task</button>
-        </div>
-      </div>
+            <div class="column">
+                <div class="card"  id="is-hover">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img class="img_video3" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <!-- <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                          </figure> -->
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4" id="video-title3"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                        </div>
+                      </div>
+                  
+                      <div class="content" id="video-des3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="card"  id="is-hover">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img class="img_video4" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <!-- <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                          </figure> -->
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4" id="video-title4"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                        </div>
+                      </div>
+                  
+                      <div class="content" id="video-des4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+          </div>
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list">
+              <li>
+                <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 2">2</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 3">3</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 3">4</a>
+              </li>
+            </ul>
+          </nav>
+
+        
+
+      
     </div>
-  </div>
+    <!-- Container End -->
+    
+  </section>
+  <!-- Section End -->
 
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy 2021 <strong>What to Watch</strong> created by <a> Team.
+      </p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  
+  <!-- Scripts-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
-
+  <script src="./assets/js/app.js"></script>
+  </body>
 </html>
