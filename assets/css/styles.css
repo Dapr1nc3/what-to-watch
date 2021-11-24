@@ -37,3 +37,19 @@ header {
 .hero-style {
     text-align: center;
 }
+
+.card{
+    background-color: var(--lightblue);
+}
+
+.content, .title, .subtitle{
+    color: var(--toggle-white);
+}
+
+.card-header-title{
+    color: var(--toggle-white);
+}
+
+.columns{
+    background-color: var(--blue);
+}

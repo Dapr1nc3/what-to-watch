@@ -27,7 +27,7 @@
             <h1 class="title">
                 What to Watch Movie Application
                 <p class="subtitle">
-                    Powered by the YouTube API and UMDb API
+                    Powered by the YouTube API and TMDb API
                 </p>
             </h1>
             
@@ -88,6 +88,8 @@
 			<div id="carousel-demo" class="hero-carousel" data-autoplay="true" data-autoplaySpeed="1000" data-infinite="true">
 				<div class="item-1">
 					<!-- Slide Content -->
+                    <!-- Add Image Link to Trailer -->
+                    <!-- Fight Club Logo API Path for Image Testing "logo_path": "/tEiIH5QesdheJmDAqQwvtN60727.png" -->
                     <figure class="image is-3by1">
                         <img src="./assets/images/hero2.jpg">
                     </figure>
@@ -157,11 +159,7 @@
 
           </div>
 
-          <!-- Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credits Section -->
-          This product uses the TMDB API but is not endorsed or certified by TMDB.
-          <figure class="image 3by1">
-            <img src="./assets/images/tmdb.svg" alt="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section" title="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section">
-        </figure>
+         
                 
         </section>
         <!-- Hero End -->
@@ -169,126 +167,147 @@
 
         <div class="columns">
             <div class="column">
-                <div class="card">
+                <div class="card" id="is-hover">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img class="img_video1" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
-                          <figure class="image is-48x48">
+                          <!-- <figure class="image is-48x48">
                             <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                          </figure>
+                          </figure> -->
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Movie Title</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          <p class="title is-4" id="video-title1"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
                         </div>
                       </div>
                   
-                      <div class="content">
+                      <div class="content" id="video-des1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
                         <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
                       </div>
                     </div>
                   </div>
             </div>
             <div class="column">
-                <div class="card">
+                <div class="card"  id="is-hover">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img class="img_video2" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
-                          <figure class="image is-48x48">
+                          <!-- <figure class="image is-48x48">
                             <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                          </figure>
+                          </figure> -->
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Movie Title</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          <p class="title is-4" id="video-title2"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
                         </div>
                       </div>
                   
-                      <div class="content">
+                      <div class="content" id="video-des2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
                         <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
                       </div>
                     </div>
                   </div>
             </div>
             <div class="column">
-                <div class="card">
+                <div class="card"  id="is-hover">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img class="img_video3" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
-                          <figure class="image is-48x48">
+                          <!-- <figure class="image is-48x48">
                             <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                          </figure>
+                          </figure> -->
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Movie Title</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          <p class="title is-4" id="video-title3"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
                         </div>
                       </div>
                   
-                      <div class="content">
+                      <div class="content" id="video-des3">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
                         <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
                       </div>
                     </div>
                   </div>
             </div>
             <div class="column">
-                <div class="card">
+                <div class="card"  id="is-hover">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img class="img_video4" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
-                          <figure class="image is-48x48">
+                          <!-- <figure class="image is-48x48">
                             <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                          </figure>
+                          </figure> -->
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Movie Title</p>
-                          <p class="subtitle is-6">@johnsmith</p>
+                          <p class="title is-4" id="video-title4"></p>
+                          <!-- <p class="subtitle is-6">@johnsmith</p> -->
                         </div>
                       </div>
                   
-                      <div class="content">
+                      <div class="content" id="video-des4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <!-- <a href="#">#css</a> <a href="#">#responsive</a>
                         <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
                       </div>
                     </div>
                   </div>
             </div>
+            
           </div>
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list">
+              <li>
+                <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 2">2</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 3">3</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 3">4</a>
+              </li>
+            </ul>
+          </nav>
+
+        
 
         
 
@@ -305,11 +324,19 @@
       <p>
         &copy 2021 <strong>What to Watch</strong> created by <a> Team.
       </p>
+       <!-- Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credits Section -->
+       This product uses the TMDB API but is not endorsed or certified by TMDB.
+       <figure class="image 3by1">
+         <img src="./assets/images/tmdb.svg" alt="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section" title="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section">
+     </figure>
     </div>
   </footer>
   <!-- Footer End -->
   
   <!-- Scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
   <script src="./assets/js/app.js"></script>
   </body>
