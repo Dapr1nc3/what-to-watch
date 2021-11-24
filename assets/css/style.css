@@ -16,7 +16,7 @@ html {
     height: 100%;
 }
 
-#nav, #navMenu {
+#nav {
     background-color: var(--nav-color);
 }
 
@@ -87,4 +87,11 @@ body.dark {
 
 .fa-sun {
 	color: #f39c12;
+}
+
+@media screen and (max-width: 1023px)
+{
+    .navbar-menu {
+    background-color: var(--nav-color)
+}
 }
