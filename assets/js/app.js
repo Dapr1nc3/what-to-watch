@@ -1,6 +1,4 @@
-// API JSON function
-$.getJSON("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCaWd5_7JhbQBe4dknZhsHJg&maxResults=12&order=date&key=AIzaSyD3Uv-QJie0sCZFwD7hnQ7ovf6-SmqDUUI", function(data){
-console.log(data);
+
 
 
 
@@ -66,22 +64,27 @@ console.log(data);
 
 // });
 
-
-
-
-
-
 // Brians vanilla javascript end
 
 
 
 
 
+// API JSON function
+$.getJSON("https://api.themoviedb.org/3/search/movie?api_key=f7d85a51bfa2246df462b8756b8f2df8&query=Jack+Reacher", function(movieData){
+console.log(movieData)
+});
 
 
 
 
 
+
+
+
+// API JSON function
+$.getJSON("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCaWd5_7JhbQBe4dknZhsHJg&maxResults=12&order=date&key=AIzaSyD3Uv-QJie0sCZFwD7hnQ7ovf6-SmqDUUI", function(data){
+console.log(data);
 
 // API var video img display links for cards 
 var imgVideo1 = "https://i.ytimg.com/vi/5EMAXHLLBr4/default.jpg";
