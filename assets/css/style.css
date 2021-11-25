@@ -2,7 +2,43 @@
     --primary-color: #ffffff;
     --secondary-color: #363636;
     --nav-color: #5f9ea0;
+    --toggle-dark: #0b090a;
+    --toggle-white: #ffffff;
+    --lightblue:#0466c8; /* Action */
+    --darkblue: #002855; /* Action */
+    --orange: #fca311; /* Comedy */
+    --blue: #14213d; /* Comedy */
+    --red: #ba181b; /* Horror */
+    --darkblack: #161a1d; /* Horror */
+    --lightpink: #ffa6c1; /* Romance */
+    --darkpink: #cd4257; /* Romance */
+  }
+/* Brians hero css styling  */
+header {
+    background-color: var(--lightblue);
+    color: var(--toggle-white);
 }
+
+.hero-image {
+    background-image: url("./assets/images/movie.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+    
+}
+
+.hero-style {
+    text-align: center;
+}
+
+
+/* Brians css styling end */
+
+
+
+
+
+/* Mya styling navbar start */
 
 .dark-theme {
     --primary-color: #363636;
@@ -13,10 +49,12 @@
 html {
     height: 100%;
 }
-  
+
 #nav {
     background-color: var(--nav-color);
 }
+
+
 
 .title, .navbar-item {
     color: var(--secondary-color);
@@ -85,6 +123,53 @@ body.dark {
 	color: #f39c12;
 }
 
+
+
+
+/* Mya styling navbar end */
+
+
+
+/* Body Styles */
+/* body {
+        
+    background-color: var(--toggle-white);         
+    font-family: Helvetica, Arial, sans-serif;
+} */
+
+header {
+    background-color: var(--lightblue);
+    color: var(--toggle-white);
+}
+
+.hero-image {
+    background-image: url("./assets/images/movie.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+    
+}
+
+.card{
+    background-color: var(--lightblue);
+}
+
+
+.content, .title, .subtitle{
+    color: var(--toggle-white);
+}
+
+.card-header-title{
+    color: var(--toggle-white);
+}
+
+.columns{
+    background-color: var(--blue);
+}
+
+
+
+/* mya media styling */
 @media screen and (max-width: 1023px)
 {
     .navbar-menu {
