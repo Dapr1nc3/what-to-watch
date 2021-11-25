@@ -17,10 +17,21 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <body>
+
+    <!-- Header Start -->
+    <header class="movie-image">
+      <section class="section">
+        <h1 class="title">What to Watch</h1>
+        <h2 class="subtitle">
+          Sub Title
+        </h2>
+      </section>
+    </header>
+    <!-- Header End -->
 
 <!-- Navigation Start -->
 <nav class="navbar is-spaced" id="nav">
@@ -85,7 +96,7 @@
         <section class="hero is-link is-small">
 
           <div class="hero-body hero-style title">
-             Featured Movie Title
+             <h2>Featured Movie Title</h2>
               
              <!-- Start Hero Carousel -->
   <section class="hero is-medium has-carousel" id="video-herotitle1'"> 
@@ -338,6 +349,30 @@
     
   </section>
   <!-- Section End -->
+
+
+
+  <div class="modal is-active is-clipped">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Welcome to What to Watch</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- Content ... -->
+        What is your Name? <input type="text">
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success" id="save">Save</button>
+        <button class="button" id="close" aria-label="close">Close</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+
 
   <!-- Footer Start -->
   <footer class="footer">

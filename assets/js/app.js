@@ -1,7 +1,18 @@
+var name = "";
 
+// Modal Save
+$("#save").click(function() {
+ 
+    $(".modal").var
+  
+ });
 
-
-
+ // Modal Close
+$("#close").click(function() {
+ 
+    $(".modal").removeClass("is-active");
+  
+ });
 
 
 

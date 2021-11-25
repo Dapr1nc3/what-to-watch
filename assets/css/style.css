@@ -19,11 +19,9 @@ header {
     color: var(--toggle-white);
 }
 
-.hero-image {
+.movie-image {
     background-image: url("./assets/images/movie.jpg");
     background-size: cover;
-    background-attachment: fixed;
-    height:100%;
     
 }
 
@@ -31,6 +29,10 @@ header {
     text-align: center;
 }
 
+footer {
+    background-color: var(--darkblue);
+    color: var(--toggle-white);
+}
 
 /* Brians css styling end */
 
