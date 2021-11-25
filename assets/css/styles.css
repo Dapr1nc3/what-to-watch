@@ -1,5 +1,7 @@
-/* Variable Styles */
 :root {
+    --primary-color: #ffffff;
+    --secondary-color: #363636;
+    --nav-color: #5f9ea0;
     --toggle-dark: #0b090a;
     --toggle-white: #ffffff;
     --lightblue:#0466c8; /* Action */
@@ -11,16 +13,7 @@
     --lightpink: #ffa6c1; /* Romance */
     --darkpink: #cd4257; /* Romance */
   }
-
-
-
-/* Body Styles */
-body {
-        
-    background-color: var(--toggle-white);         
-    font-family: Helvetica, Arial, sans-serif;
-}
-
+/* Brians hero css styling  */
 header {
     background-color: var(--lightblue);
     color: var(--toggle-white);
@@ -38,9 +31,129 @@ header {
     text-align: center;
 }
 
+
+/* Brians css styling end */
+
+
+
+
+
+/* Mya styling navbar start */
+
+.dark-theme {
+    --primary-color: #363636;
+    --secondary-color: #ffffff;
+    --nav-color: rgba(255, 0, 0, 0.651);
+}
+
+html {
+    height: 100%;
+}
+
+#nav {
+    background-color: var(--nav-color);
+}
+
+
+
+.title, .navbar-item {
+    color: var(--secondary-color);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--primary-color);
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+}
+
+body.dark {
+	background: #292C35;
+    color: cornsilk
+}
+
+
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+
+
+
+/* Mya styling navbar end */
+
+
+
+/* Body Styles */
+/* body {
+        
+    background-color: var(--toggle-white);         
+    font-family: Helvetica, Arial, sans-serif;
+} */
+
+header {
+    background-color: var(--lightblue);
+    color: var(--toggle-white);
+}
+
+.hero-image {
+    background-image: url("./assets/images/movie.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+    
+}
+
 .card{
     background-color: var(--lightblue);
 }
+
 
 .content, .title, .subtitle{
     color: var(--toggle-white);
@@ -52,4 +165,14 @@ header {
 
 .columns{
     background-color: var(--blue);
+}
+
+
+
+/* mya media styling */
+@media screen and (max-width: 1023px)
+{
+    .navbar-menu {
+    background-color: var(--nav-color)
+}
 }
