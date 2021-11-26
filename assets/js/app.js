@@ -1,10 +1,12 @@
-var name = "";
+var inputName = document.querySelector("#input");
 
 // Modal Save
-$("#save").click(function() {
+$("#save").click(function(inputName) {
 
-    localStorage.setItem("name", "name");
-    console.log("name")
+    inputName.type ="text";
+    inputName.value = "";
+    console.log(inputName.value);
+    localStorage.setItem('inputName', (inputName.value));
     $(".modal").removeClass("is-active");
   
  });
@@ -86,6 +88,23 @@ $("#close").click(function() {
 // API JSON function
 $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=f7d85a51bfa2246df462b8756b8f2df8&query=Jack+Reacher", function(movieData){
 console.log(movieData)
+
+// API var video img display for hero
+var imgHero1 = "http://image.tmdb.org/t/p/w500/zlyhKMi2aLk25nOHnNm43MpZMtQ.jpg";
+
+// API var video title display for hero
+var imgHeroTitle1 = movieData.results[0].title;
+
+// function that allows the imgs to be shown on hero 
+
+$('#img_Hero1').attr('src', imgHero1);
+
+// function that allows API video img to show on hero
+
+$('#imghero-title1').show(function(){
+    $(this).html(imgHeroTitle1);
+})
+
 });
 
 
