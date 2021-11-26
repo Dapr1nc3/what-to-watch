@@ -1,12 +1,29 @@
-var inputName = document.querySelector("#input");
+
+
+
 
 // Modal Save
 $("#save").click(function(inputName) {
 
-    inputName.type ="text";
-    inputName.value = "";
-    console.log(inputName.value);
-    localStorage.setItem('inputName', (inputName.value));
+    // Take the value of the input 
+var inputValue = document.getElementById("input").value
+
+// Save to local Storage
+localStorage.setItem("input", inputValue );
+
+// Retrive from local Storage
+var valueFromStorage = localStorage.getItem("input")
+
+// Identify your submit button and your text area for your header :
+// <p id="heading-title"></p>
+
+// Then get the click event for that button and perform your DOM update.
+var submitButton = document.getElementById("submit");
+
+submitButton.addEventListener("click", function(e) {
+   document.getElementById("heading-title").innerHTML = valueFromStorage;
+})
+    // close modal
     $(".modal").removeClass("is-active");
   
  });
