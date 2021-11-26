@@ -2,8 +2,10 @@ var name = "";
 
 // Modal Save
 $("#save").click(function() {
- 
-    $(".modal").var
+
+    localStorage.setItem("name", "name");
+    console.log("name")
+    $(".modal").removeClass("is-active");
   
  });
 
