@@ -35,7 +35,7 @@ $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=f7d85a51bfa2246df46
 console.log(movieData)
 
 // API var video img display for hero
-var imgHero1 = "http://image.tmdb.org/t/p/w500/zlyhKMi2aLk25nOHnNm43MpZMtQ.jpg";
+var imgHero1 = "http://image.tmdb.org/t/p/w500/gE8Dow9HTVYLQkRRik72o9iv9xw.jpg";
 
 // API var video title display for hero
 var imgHeroTitle1 = movieData.results[0].title;
@@ -178,7 +178,7 @@ $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=f7d85a51bfa2246df46
 console.log(movieDataSeven)
 
 // API var video img display for hero
-var imgHero7 = "/4U1SBHmwHkNA0eHZ2n1CuiC1K1g.jpg";
+var imgHero7 = "/6XVqVAMOsKL5C26pHesiAawuGYW.jpg";
 
 // API var video title display for hero
 var imgHeroTitle7 = movieDataSeven.results[0].original_title;
