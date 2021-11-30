@@ -5,11 +5,12 @@ $("#input").click(function() {
     $(".modal").removeClass("is-active");
 
     // Take the value of the input 
-    var inputValue = document.getElementById("input").value
+    var enteredName = $('#input').val();
+    console.log(enteredName);
 
     // Save to local Storage
-    localStorage.setItem("input", inputValue);
-    console.log(inputValue);
+    localStorage.setItem("input", enteredName);
+    
 
   
  });
