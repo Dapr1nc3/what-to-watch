@@ -1,7 +1,8 @@
 :root {
     --primary-color: #ffffff;
+    --card-content-color: #0466c8;
     --secondary-color: #363636;
-    --nav-color: #5f9ea0;
+    --nav-color: #00bbf9;
     --toggle-dark: #0b090a;
     --toggle-white: #ffffff;
     --lightblue:#0466c8; /* Action */
@@ -31,6 +32,33 @@ header {
     text-align: center;
 }
 
+#hero {
+    background-color: var(--nav-color);
+}
+
+.cards {
+    background-color: var(--primary-color);
+}
+
+.card-content {
+    background-color: var(--card-content-color);
+}
+
+
+.page, .direction {
+    color: var(--secondary-color);
+}
+
+.pagination-link.is-current {
+    background-color: var(--nav-color);
+    border-color: var(--nav-color);
+    color: #fff;
+}
+
+
+.footer {
+    background-color: var(--nav-color);
+}
 
 /* Brians css styling end */
 
@@ -44,6 +72,7 @@ header {
     --primary-color: #363636;
     --secondary-color: #ffffff;
     --nav-color: rgba(255, 0, 0, 0.651);
+    --card-content-color: #363636;
 }
 
 html {
@@ -71,13 +100,6 @@ body {
 	margin: 0;
 	transition: background 0.2s linear;
 }
-
-body.dark {
-	background: #292C35;
-    color: cornsilk
-}
-
-
 
 .checkbox {
 	opacity: 0;
@@ -150,11 +172,6 @@ header {
     
 }
 
-.card{
-    background-color: var(--lightblue);
-}
-
-
 .content, .title, .subtitle{
     color: var(--toggle-white);
 }
@@ -164,7 +181,7 @@ header {
 }
 
 .columns{
-    background-color: var(--blue);
+    background-color: var(--nav-color);
 }
 
 

@@ -32,23 +32,23 @@
     </span>
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="./index.html">
           <i class="fas fa-home"></i>
           &nbsp; Home
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="./action.html">
           <i class="fas fa-user-ninja"></i>
           &nbsp; Action
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="./comedy.html">
           <i class="far fa-grin-beam"></i>
           &nbsp; Comedy
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="./horror.html">
           <i class="fas fa-skull-crossbones"></i>
           &nbsp; Horror
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="./romance.html">
           <i class="fas fa-kiss-wink-heart"></i>
           &nbsp; Romance
         </a>
@@ -82,7 +82,7 @@
     <div class="container">
 
         <!-- Header Start -->
-        <section class="hero is-link is-small">
+        <section class="hero is-link is-small" id="hero">
 
           <div class="hero-body hero-style title">
              Featured Movie Title
@@ -160,12 +160,6 @@
           </div>
 
         </div>
-
-        <!-- Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credits Section -->
-        This product uses the TMDB API but is not endorsed or certified by TMDB.
-        <figure class="image 3by1">
-          <img src="./assets/images/tmdb.svg" alt="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section" title="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section">
-      </figure>
               
       </section>
       <!-- Hero End -->
@@ -190,7 +184,7 @@
         </section> -->
         <!-- Hero End -->
 
-
+ <section class="cards">
         <div class="columns">
             <div class="column">
                 <div class="card" id="is-hover">
@@ -315,20 +309,20 @@
             
           </div>
           <nav class="pagination" role="navigation" aria-label="pagination">
-            <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
-            <a class="pagination-next">Next page</a>
+            <a class="pagination-previous is-disabled direction" title="This is the first page">Previous</a>
+            <a class="pagination-next direction">Next page</a>
             <ul class="pagination-list">
               <li>
-                <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+                <a class="pagination-link is-current page" aria-label="Page 1" aria-current="page">1</a>
               </li>
               <li>
-                <a class="pagination-link" aria-label="Goto page 2">2</a>
+                <a class="pagination-link page" aria-label="Goto page 2">2</a>
               </li>
               <li>
-                <a class="pagination-link" aria-label="Goto page 3">3</a>
+                <a class="pagination-link page" aria-label="Goto page 3">3</a>
               </li>
               <li>
-                <a class="pagination-link" aria-label="Goto page 3">4</a>
+                <a class="pagination-link page" aria-label="Goto page 3">4</a>
               </li>
             </ul>
           </nav>
@@ -337,6 +331,7 @@
 
       
     </div>
+  </section>
     <!-- Container End -->
     
   </section>
@@ -348,6 +343,11 @@
       <p>
         &copy 2021 <strong>What to Watch</strong> created by <a> Team.
       </p>
+      <!-- Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credits Section -->
+      This product uses the TMDB API but is not endorsed or certified by TMDB.
+      <figure class="image 3by1">
+        <img src="./assets/images/tmdb.svg" alt="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section" title="Required Logo to Use TMDB Movie Api - Need to Move to Footer in About or Credit Section">
+    </figure>
     </div>
   </footer>
   <!-- Footer End -->
