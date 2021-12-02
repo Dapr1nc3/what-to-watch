@@ -73,14 +73,14 @@ html {
 body {
     background-color: var(--primary-color);
     align-items: center;
-    height: 100vh;
+    /* height: 100%; */
     margin: 0;
-    transition: background 0.2s linear;
+    transition: background 2s linear;
 }
 
 body.dark {
     background: #292C35;
-    color: cornsilk
+    color: cornsilk;
 }
 
 .checkbox {
@@ -150,6 +150,31 @@ header {
     display: flex;
     grid-template-rows: repeat(3, 1fr);
 }
+
+.hero {
+    margin-top: 25px;
+    background: rgb(255, 1, 1);
+}
+
+.hero-body image {
+    width: 50%;
+    max-width: 50%;
+}
+
+
+/* rodney card styling */
+
+.columns {
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/* rodney card styling ends */
 
 .card {
     display: grid;
