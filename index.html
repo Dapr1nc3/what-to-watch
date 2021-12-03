@@ -24,8 +24,8 @@
         <div class="top-of-page">
             <h1 class="">WHAT 2 WATCH</h1>
             <p> For when you need to find the right movie</p>
-            </br>
         </div>
+        <div id="topPage" class="top-of-page"></div>
     </header>
     <!-- Header End -->
 
@@ -54,7 +54,7 @@
                     <a class="navbar-item" href="./romance.html">
                         <i class="fas fa-kiss-wink-heart"></i> &nbsp; Romance
                     </a>
-                    <button class="navbar-item">
+                    <button id="nameChangeBtn" class="navbar-item">
               <i class="fas fa-envelope-open-text"></i> &nbsp; Change name
             </button>
                 </div>
@@ -68,8 +68,6 @@
                   <i class="fas fa-sun"></i>
                   <div class="ball"></div>
                 </label>
-                            <!-- <a class="button" id="light-button " onclick="lightMode()">Light Mode</a>
-          <a class="button is-dark" id="dark-button" onclick="darkMode()">Dark Mode</a> -->
                         </div>
                     </div>
                 </div>
@@ -320,31 +318,34 @@
     <!-- cards End -->
 
 
-    <!-- modal 
+    <!-- modal -->
     <div class="modal is-active is-clipped">
         <div class="modal-background"></div>
         <div class="modal-card">
             <div class="modal-card-head">
                 <p class="modal-card-title">Welcome to What 2 Watch!</p>
-                <button class="delete" aria-label="close"></button>
-                </div>
-                <section class="modal-card-body">
-                    Content ... Save Name to Local Storage and Show on Page
-                    <strong>Let's Find a Movie for you to Watch</strong>
-                </section>
-                <div class="modal-card-foot">
-                    <button class="button is-success" id="input">Find Me a Movie</button>
-                    <button class="button" id="close" aria-label="close">Close</button>
-                </div>
+                <button class="delete closeBtn hide" id="close" aria-label="close"></button>
+            </div>
+            <section class="modal-card-body">
+                <!-- Content ... Save Name to Local Storage and Show on Page -->
+                <p id="promptChange">Enter Name, You will only be asked one time</p>
+            </section>
+            <div class="modal-card-foot">
+                <input class="input" id="nameIn" type="text" placeholder="Name goes here!">
+                <button class="button is-success" id="saveBtn">Save Name</button>
+                <p class="hide" id="theOr">or</p>
+                <button class="button is-success hide" id="input">Find Me a Movie</button>
             </div>
         </div>
-    modal end -->
+    </div>
+    <!-- modal end -->
 
     <!-- Footer Start -->
     <footer>
         <div class="content has-text-centered">
-            <strong>This product uses the TMDB API but is not endorsed or certified by TMDB</strong>
             <p>
+                <strong>This product uses the TMDB API but is not endorsed or certified by TMDB</strong>
+                </br>
                 <strong>&copy 2021 What to Watch created by &#60;a&#62; Team.</strong>
             </p>
         </div>

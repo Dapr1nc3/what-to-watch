@@ -1,30 +1,95 @@
-// Modal Save Button
+var header = document.getElementById("topPage");
+var getName = document.createElement("p");
+var saveButton = document.getElementById("saveBtn");
+var theClose = document.getElementById("close");
+var theInput = document.getElementById("input");
+var theOr = document.getElementById("theOr");
+var thePrompt = document.getElementById("promptChange");
+var nameIn = document.getElementById("nameIn");
+$("#saveBtn").click(function() {
+
+    if (header.firstChild) {
+        header.removeChild(header.firstChild)
+    }
+    if (nameIn.value !== null) {
+        var nameout = nameIn.value;
+        getName.innerHTML = "Welcome " + nameout + "!"
+            //  getName.innerHTML = "welcome " + nameout + "!"
+        console.log(getName);
+        header.appendChild(getName)
+        saveName()
+        $(".modal").removeClass("is-active")
+        console.log("ran from 1");
+        thePrompt.innerText = ("You are changing your name, if not click ' Find Me a Movie ' or X")
+        theOr.classList.remove("hide")
+        theClose.classList.remove("hide")
+        theInput.classList.remove("hide")
+    } else {
+        console.log("ran from 2");
+        $(".modal").addClass("is-active");
+    }
+});
+$("#nameChangeBtn").click(function() {
+    $(".modal").addClass("is-active");
+    // nameIn = (input => input.value = '')
+    // nameIn.value = ''
+})
 $("#input").click(function() {
-
-    // close modal
-    $(".modal").removeClass("is-active");
-
-
-
-
-
+    if ((nameIn.value.length !== 0 || loadSaveName) && nameIn.value !== "") {
+        $(".modal").removeClass("is-active");
+    }
 });
-
-// Modal Close Button
 $("#close").click(function() {
-
-    $(".modal").removeClass("is-active");
-
+    if ((nameIn.value.length !== 0 || loadSaveName) && nameIn.value !== "") {
+        $(".modal").removeClass("is-active");
+    }
 });
 
+// if (loadSaveName) {
+//     var getName = document.createElement("p");
+//     nameIn = localStorage.getItem('saveName');
+//     // nameIn = nameIn.toUpperCase
+//     nameIn = JSON.parse(nameIn)
+//     getName.innerText = "Welcome back " + nameIn
+//     header.appendChild(getName);
+//     theOr.classList.remove("hide");
+//     theClose.classList.remove("hide");
+//     theInput.classList.remove("hide");
+//     $(".modal").removeClass("is-active");
+// } else {
+//     $(".modal").addClass("is-active");
+// }
+if (loadSaveName) {
+    loadSaveName()
+}
+
+function saveName() {
+    localStorage.setItem("saveName", JSON.stringify(nameIn.value));
+}
+var savedName;
+
+function loadSaveName() {
+    savedName = localStorage.getItem("saveName");
+    if ((savedName == null)) {
+        // $(".modal").addClass("is-active");
+        return false
+    } else {
+        var getName = document.createElement("p");
+        savedName = localStorage.getItem("saveName");
+        savedName = JSON.parse(savedName)
+        getName.innerText = "Welcome back " + savedName + "!";
+        header.appendChild(getName);
+        $(".modal").removeClass("is-active");
+        theOr.classList.remove("hide");
+        theClose.classList.remove("hide");
+        theInput.classList.remove("hide");
+        return true;
+    }
+}
 
 
 
-
-
-
-
-// 2nd API 
+// 2nd API
 fetch("https://watchmode.p.rapidapi.com/genres/", {
         "method": "GET",
         "headers": {
@@ -113,12 +178,6 @@ bulmaCarousel.attach('#carousel-demo', {
 
 
 
-
-
-
-
-
-
 // Mya navbar javascript start
 
 var chk = document.getElementById('chk');
@@ -140,18 +199,10 @@ function hamburgerMenu() {
 }
 
 
-
-
-
-
-
 // Mya navbar javascript end
 
 
 // Devin card section 
-
-
-
 
 
 // API JSON function for Jack Reacher
@@ -175,8 +226,6 @@ $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=f7d85a51bfa2246df46
     })
 
 });
-
-
 
 
 // API JSON function for Predator

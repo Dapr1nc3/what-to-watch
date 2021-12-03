@@ -32,13 +32,12 @@ header {
 
 .hero-image {
     background-image: url("//assets/images/thumb-1920-1007550\ \(2\).jpg");
-    background-size: cover;
     background-attachment: fixed;
-    height: 100%;
 }
 
 .hero-style {
     text-align: center;
+    font-size: 50px;
 }
 
 
@@ -48,13 +47,10 @@ header {
 /* Mya styling navbar start */
 
 .dark-theme {
-    --primary-color: #363636;
+    --primary-color: #707070;
     --secondary-color: #ffffff;
-    --lightblue: rgba(255, 0, 0, 0.651);
-}
-
-html {
-    height: 100%;
+    height: 100vw;
+    --lightblue: hsla(0, 84%, 61%, 0.933);
 }
 
 #nav {
@@ -73,18 +69,17 @@ html {
 body {
     background-color: var(--primary-color);
     align-items: center;
-    /* height: 100%; */
     margin: 0;
-    transition: background 2s linear;
+    transition: background 3s linear;
 }
 
 body.dark {
-    background: #292C35;
+    background: #292c35;
     color: cornsilk;
 }
 
 .checkbox {
-    opacity: 0;
+    opacity: 0%;
     position: absolute;
 }
 
@@ -152,8 +147,7 @@ header {
 }
 
 .hero {
-    margin-top: 25px;
-    background: rgb(255, 1, 1);
+    margin-top: 30px;
 }
 
 .hero-body image {
@@ -171,6 +165,10 @@ header {
     width: 100%;
     justify-content: center;
     margin: auto;
+}
+
+.title a:hover {
+    color: rgb(0, 0, 0);
 }
 
 
@@ -192,7 +190,8 @@ header {
     color: var(--toggle-white);
 }
 
-.card-image {
+
+/* .card-image {
     grid-area: image;
 }
 
@@ -202,7 +201,7 @@ header {
 
 .card-stats {
     grid-area: stats;
-}
+} */
 
 .card-image {
     grid-area: image;
@@ -316,7 +315,8 @@ header div .c3 {
     border-radius: 20px;
 }
 
-.hero-body.hero-style.title {
+.hero-body.hero-style.title,
+.hero {
     background-color: var(--lightblue);
 }
 
@@ -332,8 +332,19 @@ footer {
     background-color: var(--lightblue);
 }
 
+.content p {
+    margin: auto;
+}
+
+.top-of-page p {
+    margin: auto;
+}
+
 
 /* header hero ends */
+
+
+/* Rodney Styling starts */
 
 
 /* styles for the p under the hero starts */
@@ -344,8 +355,39 @@ div p {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
+
 
 /* styles for the p under the hero ends */
+
+
+/* media query for wider screen size start*/
+
+@media screen and (max-width:50000px) {
+    .c2,
+    .c4 {
+        color: white;
+        background-color: rgba(12, 1, 1, 0.50);
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .top-of-page h1 {
+        font-size: 2.5vw;
+        margin: 0px;
+    }
+    .top-of-page p {
+        font-size: 1vw;
+    }
+    .dark-theme {
+        --primary-color: #707070;
+        --secondary-color: #ffffff;
+        height: 100%;
+        --lightblue: hsla(0, 84%, 61%, 0.933);
+    }
+}
 
 
 /* media query for 768px start*/
@@ -359,13 +401,19 @@ div p {
         padding-left: 5px;
         padding-right: 5px;
     }
+    header h1 {
+        font-size: 5vw;
+    }
     .top-of-page p {
-        font-size: 3vw;
+        font-size: 3.5vw;
+    }
+    .dark-theme {
+        --primary-color: #707070;
+        --secondary-color: #ffffff;
+        height: 100%;
+        --lightblue: hsla(0, 84%, 61%, 0.933);
     }
 }
-
-
-/* media query for 768px ends */
 
 
 /* media query for 500px starts */
@@ -380,7 +428,7 @@ div p {
         padding-left: 5px;
         margin-top: 2px;
     }
-    .top-of-page h1 {
+    header h1 {
         font-size: 8vw;
         display: grid;
         margin-top: 2px;
@@ -388,8 +436,49 @@ div p {
         justify-content: center;
     }
     .top-of-page p {
-        font-size: 5vw;
+        font-size: 4vw;
     }
+    .dark-theme {
+        --primary-color: #707070;
+        --secondary-color: #ffffff;
+        height: 100%;
+        --lightblue: hsla(0, 84%, 61%, 0.933);
+    }
+}
+
+.delete,
+.delete:hover {
+    padding: 25px;
+    border-radius: 50%;
+}
+
+button {
+    border: none;
+    padding-top: 8px;
+    font-size: 1em;
+    padding-bottom: 8px;
+    background-color: rgba(128, 128, 128, 0);
+    /* background-color: #4895ef; */
+}
+
+button:hover {
+    background-color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    color: var(--darkblue);
+}
+
+.modal-card-foot {
+    justify-content: space-between
+}
+
+.modal-card-foot p {
+    max-width: 15%;
+}
+
+.modal-card-foot input {
+    margin-right: 5px;
 }
 
 
@@ -435,21 +524,4 @@ div p {
 
 #comedy-header-color {
     background-color: var(--blue);
-}
-
-button {
-    border: none;
-    padding-top: 8px;
-    font-size: 1em;
-    padding-bottom: 8px;
-    background-color: rgba(128, 128, 128, 0);
-    /* background-color: #4895ef; */
-}
-
-button:hover {
-    background-color: white;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 5px;
-    color: var(--darkblue);
 }
